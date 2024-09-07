@@ -20,7 +20,7 @@ import numpy as np
 import simplejson as json
 import sys
 import traceback
-from numpy import Inf
+from numpy import inf
 
 from shapely import LineString, Polygon, MultiLineString, MultiPolygon, Point, LinearRing
 from shapely.geometry import base
@@ -2742,10 +2742,10 @@ class ToolPaint(AppTool, Gerber):
     def paint_bounds(geometry):
         def bounds_rec(o):
             if type(o) is list:
-                minx = Inf
-                miny = Inf
-                maxx = -Inf
-                maxy = -Inf
+                minx = inf
+                miny = inf
+                maxx = -inf
+                maxy = -inf
 
                 for k in o:
                     try:

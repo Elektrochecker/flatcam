@@ -19672,7 +19672,7 @@ msgstr ""
 
 #: appPlugins/ToolPcbWizard.py:298
 msgid "PcbWizard .INF file loaded."
-msgstr "Inf-файл PcbWizard загружен."
+msgstr "inf-файл PcbWizard загружен."
 
 #: appPlugins/ToolPcbWizard.py:302
 msgid "Main PcbWizard Excellon file loaded."

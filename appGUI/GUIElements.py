@@ -5369,7 +5369,7 @@ class FCTextAreaLineNumber(QtWidgets.QFrame):
                     color = self.get_custom_color(QtGui.QColor("green"))
                     brush = QtGui.QBrush(color, Qt.BrushStyle.SolidPattern)
                     specialConstant.setForeground(brush)
-                    keywords = ["Inf", "NA", "NaN", "NULL"]
+                    keywords = ["inf", "NA", "NaN", "NULL"]
                     for word in keywords:
                         pattern = QtCore.QRegularExpression(r"\\b" + word + r"\\b")
                         rule = (pattern, specialConstant)

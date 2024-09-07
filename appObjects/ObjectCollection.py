@@ -29,7 +29,7 @@ import inspect  # TODO: Remove
 import re
 import logging
 from copy import deepcopy
-from numpy import Inf
+from numpy import inf
 
 import gettext
 import appTranslation as fcTranslate
@@ -683,10 +683,10 @@ class ObjectCollection(QtCore.QAbstractItemModel):
 
         # TODO: Move the operation out of here.
 
-        xmin = Inf
-        ymin = Inf
-        xmax = -Inf
-        ymax = -Inf
+        xmin = inf
+        ymin = inf
+        xmax = -inf
+        ymax = -inf
 
         # for obj in self.object_list:
         for obj in self.get_list():

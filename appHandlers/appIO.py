@@ -26,7 +26,7 @@ from copy import deepcopy
 import re
 
 import numpy as np
-from numpy import Inf
+from numpy import inf
 
 from datetime import datetime
 import simplejson as json
@@ -1315,10 +1315,10 @@ class appIO(QtCore.QObject):
 
             exported_svg.append(ET.tostring(root))
 
-        xmin = Inf
-        ymin = Inf
-        xmax = -Inf
-        ymax = -Inf
+        xmin = inf
+        ymin = inf
+        xmax = -inf
+        ymax = -inf
 
         for obj in obj_selection:
             try:

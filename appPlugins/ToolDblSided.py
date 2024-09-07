@@ -6,7 +6,7 @@ from appGUI.GUIElements import VerticalScrollArea, FCLabel, FCButton, FCFrame, G
 
 import logging
 from copy import deepcopy
-from numpy import Inf
+from numpy import inf
 
 from shapely import Point
 from shapely.affinity import scale
@@ -585,10 +585,10 @@ class DblSidedTool(AppTool):
             self.ui.sr_frame.show()
 
     def on_bbox_coordinates(self):
-        xmin = Inf
-        ymin = Inf
-        xmax = -Inf
-        ymax = -Inf
+        xmin = inf
+        ymin = inf
+        xmax = -inf
+        ymax = -inf
 
         obj_list = self.app.collection.get_selected()
         if not obj_list:
